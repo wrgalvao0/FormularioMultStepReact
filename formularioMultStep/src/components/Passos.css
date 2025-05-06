@@ -1,0 +1,13 @@
+#passoAtual{
+    font-weight: bold;
+}
+#passoNormal{
+    font-weight: 400;
+}
+#passos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+

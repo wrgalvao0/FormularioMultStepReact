@@ -3,6 +3,7 @@ import UsuarioForm from './components/UsuarioForm'
 import RevisarForm from './components/RevisarForm'
 import Obrigado from './components/Obrigado'
 import './App.css'
+import Passos from './components/Passos'
 
 function App() {
   let [passo, setPasso] = useState(0)
@@ -39,7 +40,7 @@ function App() {
       </header>
       <div id='form-container-pai'>
         <div id='form-container'>
-          <p>Estapas</p>
+          <Passos passo={passo}/>
           <form>
             <div id='container-inputs'>
               {passo === 0 && <UsuarioForm atualizaNome={setNome} atualizaEmail={setEmail} nome={nome} email={email}/>}
